@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Registration Form and User Data Table
+    </title>
+</head>
+<style>
+    .form {
+        background: linear-gradient(to right, skyblue, white);
+        margin: 20px auto;
+        padding: 20px;
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form h1 {
+        text-align: center;
+    }
+
+    .align {
+        width: 90%;
+        padding: 10px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .form label {
+        /* display: block; */
+        margin-bottom: 5px;
+    }
+
+    .t2 {
+        background: linear-gradient(to top, white, skyblue);
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    .t2 th,
+    .t2 td {
+        padding: 10px;
+        border: 1px solid #ccc;
+        text-align: center;
+    }
+
+    button {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: darkgreen;
+    }
+
+    .footer {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 0.9em;
+        color: #555;
+    }
+
+    fieldset {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    legend {
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+    <div class="main">
+        <!-- Registration Form Section -->
+        <div class="form">
+            <h1>Registration Form</h1>
+            <fieldset>
+                <legend>User Details</legend>
+
+                <!-- Full Name Input -->
+                <label for="fullname">Name:</label>
+                <input type="text" id="fullname" class="align" placeholder="Enter Full Name" required><br>
+
+                <!-- Email Input -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" class="align" placeholder="Enter Your Email" required><br>
+
+                <!-- Password Input -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" class="align" placeholder="Enter password" required><br>
+
+                <!-- Gender Radio Buttons -->
+                <label>Gender:</label><br>
+                <input type="radio" name="gender" id="male" value="Male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" name="gender" id="female" value="Female">
+                <label for="female">Female</label>
+
+                <input type="radio" name="gender" id="other" value="Other">
+                <label for="other">Other</label><br><br>
+
+                <!-- Hobbies Checkboxes -->
+                <label>Hobbies:</label><br>
+                <input type="checkbox" id="coding" value="Coding">
+                <label for="coding">Coding</label><br>
+
+                <input type="checkbox" id="games" value="Games">
+                <label for="games">Games</label><br>
+
+                <input type="checkbox" id="problem-solving" value="Problem Solving">
+                <label for="problem-solving">Problem Solving</label><br><br>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit</button>
+            </fieldset>
+        </div>
+        <hr>
+        <!-- User Data Table Section -->
+        <h2 style="text-align: center;">Users Data</h2>
+        <div class="table-section">
+            <table class="t2">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Gender</th>
+                        <th>Hobbies</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User Data Row 1 -->
+                    <tr>
+                        <td>01</td>
+                        <td>Abhay</td>
+                        <td>abhaysinghtomar97@gmail.com</td>
+                        <td>Male</td>
+                        <td>Coding</td>
+                    </tr>
+                    <!--  User Data Row 2 -->
+                    <tr>
+                        <td>02</td>
+                        <td>Suryansh</td>
+                        <td>surya@gmail.com.com</td>
+                        <td>Male</td>
+                        <td>Games</td>
+                    </tr>
+                    <!-- User Data Row 3 -->
+                    <tr>
+                        <td>03</td>
+                        <td>Shicendra</td>
+                        <td>shivendrapratapshrivastava69@.com</td>
+                        <td>Male</td>
+                        <td>Problem Solving</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            © 2024 Abhay Singh Tomar
+        </div>
+    </div>
+</body>
+
+</html>

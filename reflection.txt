@@ -1,0 +1,14 @@
+
+
+
+Approach: Structured the form and table using semantic
+          HTML and styled with CSS for user-friendly design.
+          Faced alignment challenges, resolved by tweaking margins and padding.
+
+Learning: Learned the importance of "border-collapse: collapse" 
+          for tables and "display: block" for proper label alignment. 
+          Gained better understanding of structuring forms and debugging CSS issues.
+
+ALso Loved This Exercise , 
+
+Thankyou GDGOC!
